@@ -15,10 +15,10 @@ int main()
 
                                 DATA TYPES
 
-            int                     Numbers                         4 byte
-            char                    Characters                      1 byte
-            float                   Floating numbers                4 byte
-            double                  Floating numbers                8 byte
+            int                     Numbers                         4 byte                  %d
+            char                    Characters                      1 byte                  %c
+            float                   Floating numbers                4 byte                  %f
+            double                  Floating numbers                8 byte                  %lf
 
 
             COD.exe ==> PROGRAM ==> Process
@@ -40,6 +40,7 @@ int main()
     // printf("My gender is %c\n", gender);
 
     // How to take input from user in C lang?
+
 
 
     return 0;

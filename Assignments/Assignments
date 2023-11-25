@@ -1,0 +1,5 @@
+Create a C program that reverses the elements of an array `arr` of size `n`. Do not use auxilary array for copying etc.
+
+Implement a C program that checks if an array `arr` of size `n` is sorted in ascending order.
+
+Write a C program that compares two arrays `arr1` and `arr2` of sizes `n1` and `n2`.
