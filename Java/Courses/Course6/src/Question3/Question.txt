@@ -1,0 +1,27 @@
+Create a base class Electronics with the following specifications:
+
+    * Private fields: brand (String), price (double), serialNumber (String), and purchaseDate (LocalDate).
+    * A constructor that initializes the brand, price, serialNumber, and purchaseDate.
+    * Public methods getBrand(), getPrice(), getSerialNumber(), and getPurchaseDate() to return the respective fields.
+    * A method discountPrice(double discountRate) that calculates the price after applying a discount. The rate is a percentage represented as a number between 0 and 1.
+    * A method warrantyCheck() that returns a boolean indicating whether the item is under warranty, assuming a 1-year warranty period.
+
+Create a derived class Laptop with the following additional specifications:
+
+    * A private field storageSize (in GB) and batteryLife (in hours).
+    * A constructor that initializes the fields from the Electronics class along with storageSize and batteryLife.
+    * Public methods getStorageSize() and getBatteryLife() to return the respective fields.
+    * Override the warrantyCheck() method to provide a 2-year warranty for laptops.
+
+Create another derived class Smartphone with the following additional specifications:
+
+    * Private fields screenSize (in inches) and cameraMegapixels (double).
+    * A constructor that initializes the fields from the Electronics class along with screenSize and cameraMegapixels.
+    * Public methods getScreenSize() and getCameraMegapixels() to return the respective fields.
+    * An additional method isDualSim() that returns a boolean indicating whether the smartphone supports dual SIM cards, determined by a private field dualSim.
+
+Create a new derived class Tablet that extends Electronics with the following specifications:
+
+    * Private fields screenSize (in inches) and hasCellular (boolean), and canDock (boolean).
+    * A constructor that initializes all the fields from the Electronics class along with screenSize, hasCellular, and canDock.
+    * Public methods getScreenSize(), hasCellular(), and canDock() to return the respective fields.

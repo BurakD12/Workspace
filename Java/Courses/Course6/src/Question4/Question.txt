@@ -1,0 +1,36 @@
+Item Class (Base Class):
+
+    * Create an abstract class Item with protected fields: id (int), title (String), and price (double).
+    * Provide a constructor to initialize these fields and corresponding getter and setter methods.
+    * Declare an abstract method getDetails() which will be implemented by derived classes to return item-specific details.
+
+Book Class (Derived from Item):
+
+    * Extend the Item class.
+    * Add a new private field author (String).
+    * Provide a constructor that includes the author field along with the fields from the Item class.
+    * Implement the getDetails() method to return details about the book, including the author.
+
+Magazine Class (Derived from Item):
+
+    * Extend the Item class.
+    * Add a new private field issueNumber (int).
+    * Provide a constructor that includes the issueNumber field along with the fields from the Item class.
+    * Implement the getDetails() method to return details about the magazine, including the issue number.
+
+Inventory Class:
+
+    * Create a class Inventory that manages a collection of Item objects.
+    * Use an ArrayList<Item> to store the items.
+    * Implement the following methods:
+        * addItem(Item item): Adds a new item to the inventory. If an item with the same id already exists, it should not be added.
+        * getItem(int id): Returns the item object for the given id. If the item does not exist, return null.
+        * updateItem(int id, Item item): Updates the item details for the given id. If the item does not exist, it should not perform any update.
+        * deleteItem(int id): Removes the item with the specified id from the inventory. If the item does not exist, it should not perform any deletion.
+        * getAllItems(): Returns a list of all items in the inventory.
+        * (Optional) getItemsByType(Class<T> type): Returns a list of items filtered by their type (e.g., all Book or all Magazine instances).
+        * searchItemsByTitle(String title): Returns a list of items whose titles contain the given substring, regardless of case.
+        * sortItemsByPrice(): Sorts the items in the inventory by price in ascending order.
+        * sortItemsById(): Sorts the items in the inventory by ID in ascending order.
+        * getTotalInventoryValue(): Calculates and returns the total value of all items in the inventory.
+        * updatePrice(int id, double newPrice): Updates the price of an item with the given ID. If the item doesn't exist, it should not perform any update.

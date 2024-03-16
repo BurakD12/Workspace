@@ -1,0 +1,26 @@
+Create a base class named LibraryItem with the following specifications:
+
+    * A private field title of type String.
+    * A private field yearPublished of type int.
+    * A constructor that accepts String and int to initialize the title and yearPublished fields.
+    * A public method getInfo() that returns a string formatted as "Title: [title], Year: [year]", where [title] and [year] are the values of the respective fields.
+
+Create a derived class named Book that extends LibraryItem with the following additional specifications:
+
+    * A private field author of type String.
+    * A constructor that accepts three parameters (String for the title, int for the year, and String for the author). This constructor should pass the title and year to the superclass constructor and initialize the author field.
+    * Override the getInfo() method to include the author of the book. The overridden method should return a string formatted as "Title: [title], Year: [year], Author: [author]".
+
+Create another derived class named DVD that extends LibraryItem with the following additional specifications:
+
+    * A private field director of type String.
+    * A constructor that accepts three parameters (String for the title, int for the year, and String for the director). This constructor should pass the title and year to the superclass constructor and initialize the director field.
+    * Override the getInfo() method to include the director of the DVD. The overridden method should return a string formatted as "Title: [title], Year: [year], Director: [director]".
+
+In a main method, create instances of Book and DVD, and call their getInfo() methods to demonstrate that your code is working as expected.
+
+Sample Output:
+If you create a Book instance with the title "Java Fundamentals", year 2021, and author "John Doe", and a DVD instance with the title "Java World", year 2022, and director "Jane Smith", the output should be:
+
+Title: Java Fundamentals, Year: 2021, Author: John Doe
+Title: Java World, Year: 2022, Director: Jane Smith
