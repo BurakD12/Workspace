@@ -1,108 +1,163 @@
 import java.util.Scanner;
 
-/**
- * App
- */
 public class App {
-
-    public static void main(String[] args) {
-        // printf("Hello");
-        // System.out.print("Hello");
-        // System.out.println("Hello");
-        // System.out.println("Hello");
-        // System.out.println("Hello");
-        
-        // int num1 = 5;
-        // int num2 = 5;
-
-        // System.out.println("Num1 + Num2 = " + (num1+num2));
-        // printf("Num1 + Num2 =  %d", (n1+n2))
-
-        // String name1 = "Ayberk";
-        // String name2 = "Burak";
-        // int age = 10;
-
-        // System.out.println(name1.length());
-        // System.out.println(name2.charAt(3));
-
-        // -------------------------------------------------------
-        // name, age, height, weight, gender, gpa
-
-        // String name = "Burak";
-        // String surname = "Diker";
-        // int age = 22;
-        // double height = 1.75;
-        // int weight = 68;
-        // char gender = 'M';
-        // float gpa = 3.123f;
-
-        // System.out.println("My information:");
-        // System.out.println("Full Name --> " + name + " " + surname);
-        // System.out.println("Age --> " + age);
-        // System.out.println("Height --> " + height);
-        // System.out.println("Weight --> " + weight);
-        // System.out.println("Gender --> " + gender);
-        // System.out.println("GPA --> " + gpa);
-
-        // HOW TO TAKE INPUT FROM USER
-
-        // scanf("%d", &num);
-
-        // How to create an object of a class
-        // ClassName varName = new ClassName(params);
-
+    public static void main(String[] args) throws Exception {
+        /*
+         * Ask user to enter his name and age.
+         * Then print a message saying "Hello [name], you are [age] years old."
+         */
         // Scanner scan = new Scanner(System.in);
 
-        // System.out.print("Enter 2 nums: ");
-        // int num1 = scan.nextInt();
-        // int num2 = scan.nextInt();
-
-        // System.out.println("Num1 + Num2 = " + (num1 + num2));
-
-        // name, surname, age, height, weight, gender, gpa
-
-        // Scanner scan = new Scanner(System.in);
-
-        // System.out.print("Type in your name: ");
+        // System.out.print("Enter your name: ");
         // String name = scan.nextLine();
-        
-        // System.out.print("Type in your surname: ");
-        // String surname = scan.nextLine();
 
-        // System.out.print("Type in your age: ");
-        // int age = scan.nextInt(); // \n
+        // System.out.print("Enter your age: ");
+        // int age = scan.nextInt();
 
-        // System.out.print("Type in your height: ");
-        // double height = scan.nextDouble(); // \n
+        // System.out.println("Hello " + name + ", you are " + age + " years old.");
 
-        // System.out.print("Type in your weight: ");
-        // int weight = scan.nextInt();  // \n
-        // scan.nextLine(); // 
+        // -------------------------------------------------------------------------------
 
-        // System.out.print("Type in your gender: ");
-        // char gender = scan.nextLine().charAt(0); // Burak\n
-
-        // System.out.print("Type in your gpa: ");
-        // float gpa = scan.nextFloat();
-
-        // System.out.println("Your full name is: " + name + " " + surname);
-        // System.out.println("Your age is: " + age);
-        // System.out.println("Your height is: " + height);
-        // System.out.println("Your weight is: " + weight);
-        // System.out.println("Your gender is: " + gender);
-        // System.out.println("Your GPA is: " + gpa);
+        /*
+         * Question: Ask user to enter a number then print whether the number is even or
+         * odd.
+         * 
+         */
 
         // Scanner scan = new Scanner(System.in);
-
-        // System.out.print("Enter a number: ");
-        // int a = scan.nextInt();
-        
-        // if (a % 2 == 0){
-        //     System.out.println("The number is even.");
+        // System.out.print("Enter your number: ");
+        // int num = scan.nextInt();
+        // if(num % 2 == 0){
+        // System.out.println("The number " + num + " is even.");
         // }
         // else {
-        //     System.out.println("The number is odd.");
+        // System.out.println("The number " + num + " is odd.");
         // }
+
+        // -------------------------------------------------------------------------------
+        /*
+         * Question: Ask user to enter a number then print whether the number is
+         * positive, negative or zero.
+         */
+
+        // Scanner scan = new Scanner(System.in);
+        // System.out.print("\nEnter a number: ");
+        // int num = scan.nextInt();
+
+        // if (num > 0){
+        // System.out.println("The number " + num + " is positive.");
+        // }
+        // else if (num == 0){
+        // System.out.println("The number 0 is zero.");
+        // }
+        // else {
+        // System.out.println("The number " + num + " is negative.");
+        // }
+
+        // -------------------------------------------------------------------------------
+
+        /*
+         * Question: Ask user to enter a number then print ıts factorial.
+         */
+
+        // Scanner scan = new Scanner(System.in);
+        // System.out.print("\nEnter a number: ");
+        // int num = scan.nextInt();
+        // int place_holder = num;
+        // int res = 1;
+        // for(int i = 0; num > i; num--){
+        // res = res * num;
+        // }
+        // System.out.println("The factorial of the number " + place_holder + " is: " +
+        // res);
+
+        // -------------------------------------------------------------------------------
+
+        /*
+         * Question: Ask user to enter a number then print whether the number is prime
+         * or not.
+         */
+
+        // Scanner scan = new Scanner(System.in);
+        // System.out.print("Enter a number: ");
+        // int num = scan.nextInt();
+
+        // boolean isPrime = true;
+        // for(int i = 2; i < num; i++){
+        // if(num % i == 0){
+        // isPrime = false;
+        // break; // No need to check further if we found a divisor
+        // }
+        // }
+
+        // if(isPrime && num > 1) {
+        // System.out.println("The number " + num + " is prime.");
+        // }
+        // else {
+        // System.out.println("The number " + num + " is not prime.");
+        // }
+
+        // -------------------------------------------------------------------------------
+        /*
+         * Question: Ask user to enter a number then print the number of digits in that
+         * number.
+         */
+
+        // Scanner scan = new Scanner(System.in);
+        // System.out.print("\nEnter a number: ");
+        // int num = scan.nextInt();
+        // int place_holder = num;
+        // int count = num != 0 ? 0 : 1; 
+
+        // /*
+        //     if (num != 0) {
+        //         count = 0;
+        //     } else {
+        //         count = 1;
+        //     }
+        // */
+
+        // while (num != 0) {
+        //     num = num / 10;
+        //     count++;
+        // }
+
+        // System.out.println("The number " + place_holder + " has " + count + " digits.");
+
+        // -------------------------------------------------------------------------------
+        /*
+            Question: Ask user to enter a number then print its reverse.
+        */
+
+        // Scanner scan = new Scanner(System.in);
+        // System.out.print("\nEnter a number: ");
+        // int num = scan.nextInt();
+        // int rev = 0;
+        // int place_holder = num;
+
+        // while (place_holder != 0) {
+        //     int rem = place_holder % 10;
+        //     rev = rev * 10 + rem; 
+        //     place_holder /= 10; // Remove the last digit from place_holder
+        // }
+
+        // System.out.println("The reverse of the number " + num + " is: " + rev);
+
+        // -------------------------------------------------------------------------------
+        /*
+            Question: Ask user to enter a number then print the sum of its digits.
+        */
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("\nEnter a number: ");
+        int num = scan.nextInt();
+        int place_holder = Math.abs(num);
+        int sum = 0;
+        while (place_holder != 0) {
+            sum = sum + (place_holder % 10);
+            place_holder /= 10;
+        }
+        System.out.println("The sum of the digits of the number " + num + " is: " + sum);
 
     }
 }

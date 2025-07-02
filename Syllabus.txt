@@ -1,0 +1,136 @@
+1. Object Oriented Programming (JAVA)
+    1.Java Fundamentals
+        - Java Data Types (Primitive)
+        - Java Operators
+        - Java Basic Input and Output
+
+    2. Java Flow Control
+        - Java if...else Statement
+        - Java Ternary Operator
+        - Java for Loop
+        - Java for-each Loop
+        - Java while and do...while Loop
+        - Java break Statement
+        - Java continue Statement
+        - Java switch Statement
+
+    3. Java Arrays
+        Java Arrays
+        Java Multidimensional Arrays
+
+    4. Methods
+        Java Methods
+        Java Method Overloading
+        Java Recursion
+
+    5. Java OOP(I)
+        Java Class and Objects
+        Java Constructors
+        Java Static Keyword
+        Java this Keyword
+        Java final keyword
+    
+    6. Java OOP(II)
+        Java Inheritance
+        Java Method Overriding
+        Java super
+        Java Abstract Class and Abstract Methods
+        Java Interface
+        Java Polymorphism
+        Java Encapsulation
+    
+    7. Java OOP (III)
+        Java Nested and Inner Class
+        Java Nested Static Class
+        Java Anonymous Class
+        Java Singleton Class
+        Java enums
+    
+    8. Java Exception Handling
+        Java Exceptions
+        Java Exception Handling
+        Java try...catch
+        Java throw and throws
+        Java catch Multiple Exceptions
+        Java try-with-resources
+    
+    9. File I/O
+        Writing binary/text data to file
+        Reading binary/text data from file
+    
+    10. ADT
+        List
+        Queue
+        Map
+        Set
+
+2. Data Structures
+    1. Data Structures (I)
+        List
+            Singular Linked List
+            Doubly Linked List
+            Circular Linked List
+        Stack
+            Array Based Stack
+            Node Based Stack
+            Infix to Prefix Conversion
+            Infix to Postfix Conversion
+        Queue
+            Array Based Queue
+            Node Based Queue
+            Priority Queue
+        Tree
+            Binary Tree
+            Binary Search Tree
+            Balanced Tree
+            AVL Tree
+        Graph
+            Adjacency Matrix Representation
+            Adjacency List Representation
+            DFS
+            BFS
+            Dijkstra Algorithm
+
+3. Algorithms
+    1. Sorting Algorithms
+        1. Bubble Sorting
+        2. Selection Sorting
+        3. Insertion Sorting
+        4. Merge Sorting
+        5. Quick Sorting
+    2. Search Algorithms
+        1. Linear Search
+        2. Binary Search
+
+4. Concurrent Programming
+    1. Threads
+    2. Processes
+    3. Concurrency
+    4. Thread Programming
+    5. Synchronization
+    6. Race Conditions
+    7. Deadlock
+
+5. Network Basics
+    1. Network Based Programming
+    2. Client-Server Applications
+    3. Security Basics
+        1. Symetric Encryption
+        2. Assymetric Encryption
+        3. MessageDigest
+        4. DigitalSignature
+
+6. Relational Database
+    1. Conceptual Data Model Design (ERD)
+    2. SQL
+
+7. Full Stack Development
+    1. Backend Development (Springboot)
+        - Controller
+        - Model
+        - Repository
+        - Service
+        - Util
+        - Auth
+        - Configuration
+    2. Frontend Development (Vue/React JS)
