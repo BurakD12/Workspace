@@ -148,16 +148,18 @@ public class App {
             Question: Ask user to enter a number then print the sum of its digits.
         */
 
-        Scanner scan = new Scanner(System.in);
-        System.out.print("\nEnter a number: ");
-        int num = scan.nextInt();
-        int place_holder = Math.abs(num);
-        int sum = 0;
-        while (place_holder != 0) {
-            sum = sum + (place_holder % 10);
-            place_holder /= 10;
-        }
-        System.out.println("The sum of the digits of the number " + num + " is: " + sum);
+        // Scanner scan = new Scanner(System.in);
+        // System.out.print("\nEnter a number: ");
+        // int num = scan.nextInt();
+        // int place_holder = Math.abs(num);
+        // int sum = 0;
+        // while (place_holder != 0) {
+        //     sum = sum + (place_holder % 10);
+        //     place_holder /= 10;
+        // }
+        // System.out.println("The sum of the digits of the number " + num + " is: " + sum);
+
+        System.out.println("Hello, World! This is a placeholder for future code examples.");
 
     }
 }

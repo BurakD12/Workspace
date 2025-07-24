@@ -2,10 +2,12 @@ import java.lang.Math;
 public class App {
     
     public static void main(String[] args) throws Exception {
-        System.out.println(CaesarEncrypter("z", 3));        System.out.println(CaesarDecoder("c", 3));
+        // System.out.println(CaesarEncrypter("z", 3));        System.out.println(CaesarDecoder("c", 3));
 
-        System.out.println(BinaryToDecimal("1101"));
-        System.out.println(DecimalToBinary(13));
+        // System.out.println(BinaryToDecimal("1101"));
+        // System.out.println(DecimalToBinary(13));
+
+        // System.out.println(String.valueOf(12345) instanceof String);
     }
 
     /*
