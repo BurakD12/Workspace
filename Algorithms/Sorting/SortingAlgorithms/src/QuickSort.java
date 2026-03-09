@@ -12,7 +12,6 @@ public class QuickSort {
 
             System.out.println("Array length: " + len + " - Time taken: " + (endTime - startTime) + " ms");
         }
-
     }
 
     public static int[] createRandomArray(int len) {
