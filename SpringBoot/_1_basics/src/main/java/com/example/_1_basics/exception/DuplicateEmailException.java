@@ -1,0 +1,7 @@
+package com.example._1_basics.exception;
+
+public class DuplicateEmailException extends RuntimeException{
+    public DuplicateEmailException(String message) {
+        super(message);
+    }
+}
