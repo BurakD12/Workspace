@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: stockflow
+      POSTGRES_USER: stockflow
+      POSTGRES_PASSWORD: stockflow
+    volumes:
+      - stockflow-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U stockflow -d stockflow"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    ports:
+      - "5433:5432"
+
+  app:
+    build: .
+    image: stockflow:1.0
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/stockflow
+      SPRING_DATASOURCE_USERNAME: stockflow
+      SPRING_DATASOURCE_PASSWORD: stockflow
+      SPRING_JPA_SHOW_SQL: "false"
+      APP_SECURITY_JWT_SECRET: ${STOCKFLOW_JWT_SECRET:-pp0gXRqpg69kqphvhFq5XK2JB4lxe8noQUoDG4RAslaDXvP/3idY/I+PV5M1EmNB}
+      APP_SECURITY_ADMIN_PASSWORD: ${STOCKFLOW_ADMIN_PASSWORD:-admin12345}
+    ports:
+      - "8080:8080"
+
+volumes:
+  stockflow-pgdata:

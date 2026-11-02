@@ -40,6 +40,11 @@ public class Task {
     @Builder.Default
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
+    private Status status = Status.TODO;
+
+    @Builder.Default
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private Priority priority = Priority.MEDIUM;
 
     @Column
@@ -49,7 +54,7 @@ public class Task {
     @JoinColumn(name = "project_id", nullable = false)
     private Project project;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "assignee_id")
     private User assignee;
 }

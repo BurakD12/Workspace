@@ -1,0 +1,13 @@
+target/
+.git/
+.gitignore
+.idea/
+*.iml
+.vscode/
+*.md
+*.postman_collection.json
+postman/
+mvnw
+mvnw.cmd
+.mvn/
+.env
